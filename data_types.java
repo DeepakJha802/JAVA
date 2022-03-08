@@ -3,9 +3,9 @@ public class data_types
     public static void main (String[] arg)
     {
         int a = 5 ; //  4 bytes
-        byte b = 10 ; // 2 bytes
+        byte b = 10 ; // 1 bytes
         long c = 7854 ; // 8 bytes
-        short d = 3 ; // 1 bytes
+        short d = 3 ; // 2 bytes
         //  we can store integral value in four data types . use according to size of data.
 
 
@@ -17,10 +17,10 @@ public class data_types
 
 
         char ch = 'a' ; // 2 bytes
-        char ch1 = "d" ; // string
+       // char ch1 = "deepak" ; // string
         // here ch is a char data types but ch1 is string because ch in single quotes and ch1 in double quotes .
 
-        boolean b = true ; // size of boolean data type is 1 bit. but computer can't work with 1 bit so they can use of 1 bytes of memory.
+        boolean b1 = true ; // size of boolean data type is 1 bit. but computer can't work with 1 bit so they can use of 1 bytes of memory.
         // boolean is just similer to binary value . so there value is either true or false.
 
     }
