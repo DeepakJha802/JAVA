@@ -1,0 +1,33 @@
+
+(LECTURE - 2)
+
+Takeing input in java
+
+1. there are multiple way to take input in java but now we talking about scanner
+because scanner is a easyer way to take input now,
+for take input we have first to creat a scanner
+now to creat a scanner --
+    Scanner s = Scanner(System.in);
+        here we want scanner to fetch input fron the input string so this is why we writeing system.in
+        also we have to add package. where scanner is present (i.e (import java.util.Scanner)).
+        here ,
+        java.util -- this is a package
+        .Scanner -- this is class
+        Package is a collection of classes and class is a collection of objects.
+int a = s.nextInt(); // this is how we can take input from user.
+int b = s.nextInt();
+char ch = s.nextChar();
+double d = s.nextDouble();
+short sh = s.nextShort();
+long l = s.nextLong();
+String str = s.next(); // for fetch 1st word only.
+String str = s.nextLine(); // for fetch the entire line.
+char ch = str.CharAt(0); // to fetch the first alphabet of word from the string.
+
+
+(LECTURE - 3 )
+
+
+
+binary no system is a base two no system it has 2 digit 0 and 1 . and this two digit called bits.
+
