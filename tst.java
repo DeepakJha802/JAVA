@@ -54,7 +54,6 @@
 //       string1 = string1.toUpperCase();
 //       string2 = string2.toUpperCase();
 
-
 //       // join the two substrings
 //       str = string1 + remainingLetters;
 //       str1 = string2 + remainingLetters2;
@@ -77,11 +76,9 @@
 //         int end  = sc.nextInt();
 //             System.out.println(str.substring(start , end));
 
-
 //     }
 
 // }
-
 
 // import java.util.Scanner;
 
@@ -97,23 +94,25 @@
 //     }
 // }
 
-
 import java.util.Scanner;
 
-public class tst
-{
-    public static void main(String[] args){
 
-       Scanner sc = new Scanner(System.in);
-       int n = sc.nextInt();
-       int arr[] = new int[n];
-       for (int  i = 0; i<n; i++)
-       {
-           arr[i]= sc.nextInt();
-       }
-       for (int i = 0; i<n ; i++)
-       {
-           System.out.println(arr[i]);
-       }
+
+public class tst {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for (int i = 0; i < t; t++)
+        {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            if (a > 0 && b > 0)
+            System.out.println("Solution");
+            else if (a==0)
+            System.out.println("Liquid");
+            else if (b==0)
+            System.out.println("Solid");
+        }
     }
 }
