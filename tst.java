@@ -96,23 +96,18 @@
 
 import java.util.Scanner;
 
-
-
 public class tst {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
-        for (int i = 0; i < t; t++)
+
+        int arr[] = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
+        int sum = 0;
+        for (int i = 0; i < 10; i++)
         {
-            int a = sc.nextInt();
-            int b = sc.nextInt();
-            if (a > 0 && b > 0)
-            System.out.println("Solution");
-            else if (a==0)
-            System.out.println("Liquid");
-            else if (b==0)
-            System.out.println("Solid");
+            sum = sum + arr[i];
+            System.out.println("value is "+arr[i]);
         }
+        System.out.println("sum =  "+sum);
     }
 }
