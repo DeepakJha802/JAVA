@@ -94,24 +94,94 @@
 //     }
 // }
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class tst {
-    public static void main(String[] args) {
+// public class tst {
+//     public static void main(String[] args) {
 
+//         Scanner sc = new Scanner(System.in);
+
+//         int arr[] = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
+//         int sum = 0;
+//         for (int i = 0; i < 10; i++)
+//         {
+//             sum = sum + arr[i];
+//             System.out.println("value is "+arr[i]);
+//         }
+//         System.out.println("sum =  "+sum);
+//     }
+// }
+
+// import java.util.Scanner;
+
+// public class tst {
+//     public static void main(String[] arg) {
+//         Scanner sc = new Scanner(System.in);
+//         int t = sc.nextInt();
+//         while (t != 0) {
+//             int n = sc.nextInt();
+//             int arr[] = new int[n];
+//             for (int i = 0; i < n; i++) {
+//                 arr[i] = sc.nextInt();
+//             }
+//             int temp;
+//             for (int i = 0; i < n; i++)
+//         {
+//             for (int j = i + 1; j < n; j++) {
+//                 if (arr[i] > arr[j])
+//                 {
+//                     temp = arr[i];
+//                     arr[i] = arr[j];
+//                     arr[j] = temp;
+//                 }
+//             }
+//         }
+//             boolean condition_satisfied = true;
+//             for (int i = 1; i < n - 1; i++) {
+//                 int d = arr[i] - arr[i - 1];
+//                 int c = arr[i + 1] - arr[i];
+//                 if ((2 * d != c) && (d != 2 * c)) {
+//                     condition_satisfied = false;
+//                     break;
+//                 }
+//             }
+//             if(condition_satisfied)
+//             System.out.print("YES\n");
+//             else
+//             System.out.print("NO\n");
+//             t = t - 1;
+//         }
+//     }
+// }
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef {
+    public static void main(String[] args) throws java.lang.Exception {
         Scanner sc = new Scanner(System.in);
-
-        int arr[] = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
-        int sum = 0;
-        for (int i = 0; i < 10; i++)
-        {
-            sum = sum + arr[i];
-            System.out.println("value is "+arr[i]);
+        int t = sc.nextInt();
+        while (t-- > 0) {
+            int n = sc.nextInt();
+            List<Integer> arr = new ArrayList<>();
+            for (int i = 0; i < n; i++) {
+                arr.add(sc.nextInt());
+            }
+            boolean condition_satisfied = true;
+            Collections.sort(arr);
+            for (int i = 1; i < n - 1; ++i) {
+                int a = arr.get(i) - arr.get(i - 1);
+                int b = arr.get(i + 1) - arr.get(i);
+                if (2 * a != b && a != 2 * b) {
+                    condition_satisfied = false;
+                    break;
+                }
+            }
+            if (condition_satisfied) {
+                System.out.println("Yes");
+            } else
+                System.out.println("No");
         }
-        System.out.println("sum =  "+sum);
     }
 }
-
-
-
-
