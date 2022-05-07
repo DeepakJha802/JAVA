@@ -154,34 +154,81 @@
 //     }
 // }
 
-import java.util.*;
+// import java.util.*;
+// import java.lang.*;
+// import java.io.*;
+
+// class Codechef {
+//     public static void main(String[] args) throws java.lang.Exception {
+//         Scanner sc = new Scanner(System.in);
+//         int t = sc.nextInt();
+//         while (t-- > 0) {
+//             int n = sc.nextInt();
+//             List<Integer> arr = new ArrayList<>();
+//             for (int i = 0; i < n; i++) {
+//                 arr.add(sc.nextInt());
+//             }
+//             boolean condition_satisfied = true;
+//             Collections.sort(arr);
+//             for (int i = 1; i < n - 1; ++i) {
+//                 int a = arr.get(i) - arr.get(i - 1);
+//                 int b = arr.get(i + 1) - arr.get(i);
+//                 if (2 * a != b && a != 2 * b) {
+//                     condition_satisfied = false;
+//                     break;
+//                 }
+//             }
+//             if (condition_satisfied) {
+//                 System.out.println("Yes");
+//             } else
+//                 System.out.println("No");
+//         }
+//     }
+// }
+
+
+import java.util.Scanner;
 import java.lang.*;
 import java.io.*;
+import java.util.Arrays;
 
-class Codechef {
+class tst {
     public static void main(String[] args) throws java.lang.Exception {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        while (t-- > 0) {
-            int n = sc.nextInt();
-            List<Integer> arr = new ArrayList<>();
-            for (int i = 0; i < n; i++) {
-                arr.add(sc.nextInt());
-            }
-            boolean condition_satisfied = true;
-            Collections.sort(arr);
-            for (int i = 1; i < n - 1; ++i) {
-                int a = arr.get(i) - arr.get(i - 1);
-                int b = arr.get(i + 1) - arr.get(i);
-                if (2 * a != b && a != 2 * b) {
-                    condition_satisfied = false;
-                    break;
-                }
-            }
-            if (condition_satisfied) {
-                System.out.println("Yes");
-            } else
-                System.out.println("No");
+        while (t-- > 0)
+     {
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for(int i = 0; i < n ; i++)
+        {
+            arr[i] = sc.nextInt();
         }
+        Arrays.sort(arr);
+        if (n == 1)
+        {
+            System.out.println(arr[0]);
+        }
+        else
+        {
+           int max = 0 , d = 0;
+           for (int i = n - 1; i >= 1; i--)
+           {
+               if (arr[i] == arr[i-1])
+               {
+                   d++;
+               }
+               else
+               {
+                   if (max < arr[i] + d)
+                   {
+                       max = arr[i] + d;
+                   }
+                   d = 0;
+               }
+           }
+           System.out.println(max);
+        }
+    }
     }
 }
