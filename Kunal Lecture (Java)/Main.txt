@@ -1,0 +1,37 @@
+L - 1 :-
+
+Main :- Main is a name of the class. Always try to start with the captial latter of a name of the class,it s a good practice beacuse
+when we can start writting bigger code and in the any programs has lots of class and lots of method then may be we can confuse which is
+class and which is methods.
+So if we start writing all the name of the class with uppercase letter then we are alreday know that which is class and which is methods.
+But we can use fully uppercase well as fully lowercase letter or Combination of both letter it does not shows any error we can use both
+the type frequently.
+
+Public :- Public means that this class can be accessed from anywhere that means this class can be accessed from other classes, other file,
+other packages.
+
+Class :- class just name group of properties and function in this class we have methods and function.
+
+
+L - 2 :-
+
+Void :- void is the return type of the function.
+
+(String[] args) :- this is known as commond line arguments.
+String[] :- This is basically an array and this is collections of strings.
+
+Package :- it's the folder in which your java file lies.
+
+Static - When the JVM makes a call to the main method there is no object that exists for the class being called therefore it has to
+have static method to allow invocation from class.(Stack Overflow)
+
+
+Common :-
+
+When we run this code first compiler(javac) gives the ".class" file i.e byte code it does not gives direct machine code.
+
+Basically all the functions that are in the classes are known as methods.
+
+File name of the java file and the name of the class are always will be same otherwise we will get the error.
+why? this is discueed when we learn OOPs.
+
