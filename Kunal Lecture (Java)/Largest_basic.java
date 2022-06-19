@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 public class Largest_basic {
     public static void main(String[] args) {
@@ -12,43 +13,43 @@ public class Largest_basic {
         int c = sc.nextInt();
 
         /*
-        Type - 1
-
-        int max = a;
-        if (b > max)
-        {
-            max = b;
-        }
-        if (c > b)
-        {
-            max = c;
-        }
-        System.out.println("Max = " + max);
-        */
+         * Type - 1
+         *
+         * int max = a;
+         * if (b > max)
+         * {
+         * max = b;
+         * }
+         * if (c > b)
+         * {
+         * max = c;
+         * }
+         * System.out.println("Max = " + max);
+         */
 
         /*
-        Type - 2
-
-        int max  = 0;
-        if (a > b)
-        {
-            max = a;
-        }
-        else
-        {
-            max = b;
-        }
-        if (c > max)
-        {
-            max = c;
-        }
-        System.out.println("Max = " + max);
-        */
+         * Type - 2
+         *
+         * int max = 0;
+         * if (a > b)
+         * {
+         * max = a;
+         * }
+         * else
+         * {
+         * max = b;
+         * }
+         * if (c > max)
+         * {
+         * max = c;
+         * }
+         * System.out.println("Max = " + max);
+         */
 
         // Type - 3
 
         // int max = Math.max(c , Math.max(a , b));
-           System.out.println("Max = " + Math.max(c , Math.max(a , b)));
+        System.out.println("Max = " + Math.max(c, Math.max(a, b)));
 
         // int max = Math.max(a , b);
         // int maxm = Math.max(max , c);
