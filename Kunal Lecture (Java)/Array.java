@@ -23,7 +23,8 @@ public class Array {
 
 //  New :- new is a keyword basically it is used to create an object.
 
-// Null :- null is not a keyword. null basically means that it's like a special Literals of null type 
+// Null :- null is not a keyword. null basically means that it's like a special Literals of null type we can cast in any reference  tyep.
+// But we can't create a null type , we can not declare to this as a variable type. we can not assign it to any primitives.
 
 // Some Important Points of Arrays  :-
 
@@ -34,3 +35,5 @@ public class Array {
 //  Hence ,
 //  In Java Object May not be continuous --> Depends on JVM.
 
+//  String are immutable in java and arrays are mutable in java.
+// mutable means we can change the objects 
