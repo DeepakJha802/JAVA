@@ -36,5 +36,3 @@ public class Arrays_multidimensional {
     }
 }
 
-int[] arr = new int[10];
-Student[] arr = new Student[10];
