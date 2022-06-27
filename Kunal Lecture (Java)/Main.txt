@@ -54,3 +54,9 @@ sc = this is a variable of Scanner class, it is pointing to the object of Scanne
 provided by Scanner class.
 
 
+char [] name = new char[];
+
+sting name = "ramka";
+String 
+
+char [] name = new char[name.length]
