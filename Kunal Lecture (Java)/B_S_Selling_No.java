@@ -28,6 +28,12 @@ public class B_S_Selling_No {
         int start = 0;
         int end = arr.length - 1;
 
+        // What if the target is greater than the last element in the array.
+        if (target > arr[arr.length - 1])
+        {
+            return -1;
+        }
+
         while (start <= end) {
             // int mid = (start + end) / 2; // In some cases may be exceeds the range of
 
