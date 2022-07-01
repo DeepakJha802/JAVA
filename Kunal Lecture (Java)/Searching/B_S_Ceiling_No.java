@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class B_S_Selling_No {
+public class B_S_Ceiling_No {
 
     public static void main(String[] args) {
 
@@ -14,7 +14,7 @@ public class B_S_Selling_No {
         System.out.println("Enter the target element: ");
         int target = sc.nextInt();
 
-        int ans = Selling(arr, target);
+        int ans = Ceiling(arr, target);
         if (ans < 0) {
             System.out.println("Element not found.");
         } else {
@@ -22,9 +22,9 @@ public class B_S_Selling_No {
         }
     }
 
-//  In Selling :- we have to return the smallest no >= target.
+//  In Ceiling :- we have to return the smallest no >= target.
 
-    static int Selling(int[] arr, int target) {
+    static int Ceiling(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
 
@@ -51,6 +51,5 @@ public class B_S_Selling_No {
     }
 }
 
-// Selling no :- Selling of the given no means in this array find the smallest.
-// no in this array that is greater than or equal to the
-// target number.
+// Ceiling no :- Ceiling of the given no means in this array find the smallest.
+// no in this array that is greater than or equal to the target number.
