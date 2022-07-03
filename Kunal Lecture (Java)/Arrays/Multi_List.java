@@ -16,7 +16,7 @@ public class Multi_List {
         }
 
         // Add elements.
-        fpr (int i = 0; i < 3; i++)
+        for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < 3; j++)
             {
