@@ -5,7 +5,9 @@ public class Char_cheack {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        Char ch = in.next().trim().charAt(0);
+        // Char ch = in.next().trim().charAt(0);
+        String s = sc.nextLine();
+        char ch = s.charAt(0);
         if (ch > 'a' && ch < 'z')
         {
             System.out.println("Lowercase.");
