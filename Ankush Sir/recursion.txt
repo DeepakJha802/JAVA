@@ -1,0 +1,15 @@
+We have to treat recurison problem as Principle of Mathematical Induction (PMI).
+
+like,
+
+If F(n) is true for all natural nos.
+
+1. Base case :- F(0) & F(1) is true.
+2. Induction Hypothesis :- Assume that F(k) is true
+3. Induction Step :- Using Step 2 Prove that F(k + 1) is true.
+
+## Another Extended form of Principle of Mathematical Induction(PMI)..
+
+1. Base case :- Prove F(0) or F(1) is true.
+2. Induction Hypothesis :- Assume F(i) is true for all i <= k
+3. Induction Step :- Using Step 2 Prove F(k + 1) is true.

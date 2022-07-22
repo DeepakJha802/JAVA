@@ -1,0 +1,13 @@
+Time Complexity :- It is a function that tells us how the time is going to groww as the input growws.
+
+Meaning of Big O Notation :- Upper Bound
+This Means that it will take atmost time Complexity.
+for eg,
+O(n) :- This Means that it will take atmost n time Complexity.
+
+Meaning of Big omega Notation :- Lower Bound (it is just opposite to the Big O Notation)
+This Means that it will take atleast time Complexity.
+
+for example,
+Big omega(n^3) :- This Means that it will take atleast n^3 time Complexity.
+
