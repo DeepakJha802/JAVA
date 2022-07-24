@@ -35,7 +35,6 @@ public class B_S_2D_Array {
         }
         return new int[]{-1 , -1};
     }
-
 }
 
 // Rows and coloumn both are sorted in increasing oeder.

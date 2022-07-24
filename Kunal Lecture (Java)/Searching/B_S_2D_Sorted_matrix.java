@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class B_S_2D_Sortedmatrix {
+public class B_S_2D_Sorted_matrix {
     public static void main(String[] args)
     {
         int[][] arr = {
