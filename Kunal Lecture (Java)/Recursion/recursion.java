@@ -36,3 +36,15 @@ public class recursion {
 // 2. You can convert recursion solution into iteration & vice versa.
 // 3. Space complexity is not constant Beacuse of recursive calls.
 // 4. It helps us in breaking down bigger problems into smaller problems.
+
+// What is Recurence Relation :- A recurrence relation is an equation which represents a sequence based on some rule.
+// It helps in finding the subsequent term (next term) dependent upon the preceding term (previous term).
+
+// For eg, F(n) = F(n - 1) + F(n - 2)  (nth. fibonacci no)
+
+// There are two types of recursion problems :-
+// 1. Linear  (Like, Factorial of a no , and fibonacci nos)
+// 2. Divide and Conquer (like Bnary Search)
+
+// 1. Linear Recurences Relation :- F(n) = F(n - 1) + F(n - 2)  (nth. fibonacci no)
+// 2. Divide and Conquer Recurences Relation :- F(n) = F(n / 2) + O(1)   (Binary Search)

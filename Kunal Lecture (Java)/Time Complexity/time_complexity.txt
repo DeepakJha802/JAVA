@@ -11,3 +11,22 @@ This Means that it will take atleast time Complexity.
 for example,
 Big omega(n^3) :- This Means that it will take atleast n^3 time Complexity.
 
+Theta Notation :- This means a algorithm has both Lower Bound and Upper Bound is same.
+
+Little (o) Notation :- This is also give the Upper bound but this is not strict upper bound.
+
+Little omega Notation :- This is also give the Lower bound but this is not strict lower bound.
+
+Space Complexity :- The input space plus the auxilary Space.
+Auxilary Space Complexity :- Auxilary space is the extra space or the temporary space taken by an algorithm.
+
+1. In Binary search space complexity constant.
+2. In Linear search space complexity constant.
+3. Also Bubble sort , Insertion sort , Count sort and selection sort all have constant time complexity.
+
+## Recursive algorithm :-
+
+1. In the Recursive algorithm at any particular point of time no two function call at the same level of recursion will be in the stack at the same time.
+2. Only call that are interlinked will be in the stack at the same time.
+3. In Recursive algorithm the space complexity is the height of the tree.
+4. Space complexity or auxilary space complexity is O(n).https://drive.google.com/drive/u/2/folders/1EOzwkhYkplL-VUDaofpx4i0V9-afROUp
