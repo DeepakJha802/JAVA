@@ -15,8 +15,6 @@ public class All_target_index {
     }
     static int all_index(int[] arr , int n, int k)
     {
-
+        
     }
 }
-
-

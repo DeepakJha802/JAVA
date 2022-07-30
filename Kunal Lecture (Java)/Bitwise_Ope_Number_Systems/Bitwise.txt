@@ -1,0 +1,9 @@
+Base two (2) number system means Binary number system. That's means Zero's (0) and One's (1).
+
+1. When we do AND(&) Operation of any number with one(1) , number will remain the same.
+2. When we do XOR(^) Operation of any number with one(1) , then we are getting the compliment of that number.
+3. When we do XOR(^) Operation of any number with Zero(0) , then we are getting the same number.
+4. When we do XOR(^) Operation of any number with itself , then we are getting the Zero.
+5. When we shift left a number A , B times , then we getting (a * (2 ^ b)).
+6. When we shift right a number A , B times , then we getting (a / (2 ^ b)).
+7. 

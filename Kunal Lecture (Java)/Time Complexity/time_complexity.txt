@@ -29,4 +29,4 @@ Auxilary Space Complexity :- Auxilary space is the extra space or the temporary 
 1. In the Recursive algorithm at any particular point of time no two function call at the same level of recursion will be in the stack at the same time.
 2. Only call that are interlinked will be in the stack at the same time.
 3. In Recursive algorithm the space complexity is the height of the tree.
-4. Space complexity or auxilary space complexity is O(n).https://drive.google.com/drive/u/2/folders/1EOzwkhYkplL-VUDaofpx4i0V9-afROUp
+4. Space complexity or auxilary space complexity is O(n).
