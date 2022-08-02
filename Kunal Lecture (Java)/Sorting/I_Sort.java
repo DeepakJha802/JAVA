@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
+
 public class I_Sort {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -14,21 +15,15 @@ public class I_Sort {
         System.out.println(Arrays.toString(arr));
     }
 
-    static void Insertion_sort(int[] arr)
-    {
+    static void Insertion_sort(int[] arr) {
         boolean already_sorted = false;
-        for (int i = 0; i < arr.length - 1; i++)
-        {
-            for (int j = i + 1; j > 0; j--)
-            {
-                if (arr[j] < arr[j - 1])
-                {
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i + 1; j > 0; j--) {
+                if (arr[j] < arr[j - 1]) {
                     int temp = arr[j - 1];
                     arr[j - 1] = arr[j];
                     arr[j] = temp;
-                }
-                else
-                {
+                } else {
                     break;
                 }
             }
@@ -39,6 +34,7 @@ public class I_Sort {
 // Insertion Sort :- In this sort we are partially sort the array.
 // Best case time complexity :- O(n).
 // Worst case time complexity :- O(n^2).
-// It works good on smaller value of n . and also good works when the array is partially sorted.
+// It works good on smaller value of n . and also good works when the array is
+// partially sorted.
 // It also take part in hybrid sorting algorithms (Quick sort and merge sort).
 // It Is Stable.
