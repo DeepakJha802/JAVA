@@ -1,0 +1,10 @@
+# Properties of modulo :-
+
+1. (a + b) % k = ((a % k) + (b % k)) % k.
+2. (a - b) % k = ((a % k) - (b % k) + k) % k.
+3. (a * b) % k = ((a % k) * (b % k)) % k.
+4. (a / b) % k = ((a % k) * (b^-1 % k)) % k.   (b^-1 % k means multiplicative modulo inverse)
+5. (a % k) % k = (a % k).
+6. (k^x % k) = 0. if for all x belongs to the +ve integers.
+7. if P is prime no which is not a divisor of b , then ab^(p - 1) % p = a % p. Due to Fermat's Little theorem. How we will worked in advance dsa course.
+
