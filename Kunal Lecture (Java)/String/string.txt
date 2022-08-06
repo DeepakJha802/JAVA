@@ -1,0 +1,16 @@
+More Function on String:
+
+Let's str is a String.
+
+1. str.length(); :- Returns the length of String.
+2. str = str1 + str2 :- Use to concantenate two String.
+3. str.charAt(i) :- Returns the character at the specified index in a string
+4. str = str1.concat(str2) :- It also Use to concantenate two String.
+5. str1.equals(str2) :- To compare the two string.
+6. str1.compareTo(str2) :- It also compare two string but lexicographically. and this is Returns the ASCII gap between the mismatch character.
+7. str1.contains("str2") :- To find the str1 is contains str2 or not it give boolean value.
+8. str1.substring(i) :- Returns the all character from i onwards.
+9. str1.substring(i , j) :- Returns the all character from i onwards Except index jth character beacuse j is exclusive.
+
+If we try to print out of the length of string through the str1.substring(i , j) method then we get the error. But
+If we try to print out of the length of string through the str1.substring(i) method then we get empty string.
