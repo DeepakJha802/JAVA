@@ -23,7 +23,11 @@ public class Merge_two_sorted_array {
             arr2[i] = sc.nextInt();
         }
 
-        System.out.println(merge_two_sorted_array(arr1 , arr2 , m , n));
+        int ans[] = merge_two_sorted_array(arr1 , arr2 , m , n);
+        for (int i = 0; i < ans.length; i++)
+        {
+            System.out.print(ans[i] + " ");
+        }
     }
     static int[] merge_two_sorted_array (int[] arr1 , int[] arr2 , int m , int n)
     {
@@ -33,17 +37,18 @@ public class Merge_two_sorted_array {
 
         while (i < m && j < n)
         {
-            if (arr1[i] <= arr2[j])
+            if (arr1[i] < arr2[j])
             {
                 temp[k] = arr1[i];
                 i++;
+                k++;
             }
             else
             {
                 temp[k] = arr2[j];
                 j++;
+                k++;
             }
-            k++;
         }
         while(i < m)
         {

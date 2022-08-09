@@ -12,5 +12,5 @@ Let's str is a String.
 8. str1.substring(i) :- Returns the all character from i onwards.
 9. str1.substring(i , j) :- Returns the all character from i onwards Except index jth character beacuse j is exclusive.
 
-If we try to print out of the length of string through the str1.substring(i , j) method then we get the error. But
-If we try to print out of the length of string through the str1.substring(i) method then we get empty string.
+If we try to print the str.length() of string through the str1.substring(str.length()) method then we get the empty string. But
+If we try to print out of the length of string through the str1.substring() method then we get error.

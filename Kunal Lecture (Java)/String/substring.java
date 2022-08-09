@@ -26,11 +26,12 @@ public class substring {
 
     public static void printSubstring (String str)
     {
-        for (int i = 0; i < str.length(); i++)
+        for (int len = 1; len <= str.length(); len++)
         {
-            for (int j = i; j >= i; j--)
+            for (int start = 0; start <= str.length() - len; start++)
             {
-                System.out.println(str.substring(i , j + 1));
+                int end = start + len - 1;
+                System.out.println(str.substring(start , end  + 1));
             }
         }
     }
