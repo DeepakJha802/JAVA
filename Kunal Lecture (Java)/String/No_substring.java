@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class substring {
+public class No_substring {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
