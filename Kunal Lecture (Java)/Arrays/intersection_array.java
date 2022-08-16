@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -22,6 +23,32 @@ public class intersection_array {
     }
     static void intersection_element(int arr1[] ,int[] arr2)
     {
+        // Approach - 1.
+
+        // int i = 0;
+        // int j = 0;
+        // ArrayList<Integer> list = new ArrayList<>();
+        // while (i < nums1.length; && j < nums2.length)
+        // {
+        //     if (nums1[i] == nums2[j])
+        //     {
+        //         list.add(nums1[i]);
+        //         i++;
+        //         j++;
+        //     }
+        //     else if (nums1[i] < nums2[j])
+        //     {
+        //         i++;
+        //     }
+        //     else
+        //     {
+        //         j++;
+        //     }
+        // }
+
+
+        // Approach - 2
+
         for (int i = 0; i < arr1.length; i++)
         {
             for (int j = 0; j < arr2.length; j++)
@@ -36,3 +63,4 @@ public class intersection_array {
         }
     }
 }
+
