@@ -10,7 +10,7 @@ Q. Find the sum of nth row of a pascal's triangle.
 ans:-  1 << (n -1) = 1 * 2
 
 Sum of each row = n     n    n                              n             n
-                   c  +  c +  c + ....................... +  c      =    2   (2^n);
+                   c  +  c +  c + ....................... +  c      =    2  (2^n);
                     0     1    2                               n
 
                                                     (n - 1)
