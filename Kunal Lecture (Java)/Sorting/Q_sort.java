@@ -11,7 +11,7 @@ public class Q_sort {
         {
             arr[i] = sc.nextInt();
         }
-        
+
         quick_sort(arr);
 
         for (int i = 0; i < n; i++)
@@ -31,6 +31,7 @@ public class Q_sort {
         {
             return;
         }
+
         int partition_index = partition(arr , start_index , end_index);
         quick_sort(arr, start_index, partition_index - 1);
         quick_sort(arr, partition_index + 1, end_index);
@@ -40,6 +41,7 @@ public class Q_sort {
     {
         int pivot = arr[start_index];
         int count = 0;
+
         for (int i = start_index + 1; i <= end_index; i++)
         {
             if (arr[i] <= pivot)
@@ -47,6 +49,7 @@ public class Q_sort {
                 count++;
             }
         }
+
         int pivot_index = start_index + count;
         arr[start_index] = arr[pivot_index];
         arr[pivot_index] = pivot;
@@ -74,3 +77,6 @@ public class Q_sort {
         return pivot_index;
     }
 }
+
+// Space complexity :- O(logn)
+// Time Complexity :- O(nlogn).

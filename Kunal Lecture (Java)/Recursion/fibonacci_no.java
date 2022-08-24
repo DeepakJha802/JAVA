@@ -22,3 +22,7 @@ public class fibonacci_no {
 }
 
 // Print the nth fibonacci nos.
+// To print the fibbonacci no by using recursion is very bad algorithm.
+// Beacuse the time complexity is : O(2^n); which is exponential.
+// Exponential time complexity is very bad.
+// Space complexity of fibbonacci no. using recursion is :- O(n).

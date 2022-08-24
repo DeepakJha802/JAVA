@@ -25,15 +25,15 @@ public class Array_list {
             list.contains(15);
             list.contains(69);
 
-            list.set(2, 85);
             list.set(6, 95);
 
             list.remove(4);
             list.remove(1);
+            list.set(2, 85);
 
             System.out.println(list);
 
-            
+
         }
     }
 }

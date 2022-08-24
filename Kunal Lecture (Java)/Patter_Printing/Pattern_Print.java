@@ -205,27 +205,27 @@ public class Pattern_Print {
 
     //////////////////////////////////////////////////////////////////////////////////
 
-    // static void Pattern (int n)
-    // {
-    //     for (int i = 1; i <= 2 * n; i++)
-    //     {
-    //         int col = i > n ? 2 * n - i: i;
+//     static void Pattern (int n)
+//    {
+//         for (int i = 1; i <= 2 * n; i++)
+//         {
+//             int col = i > n ? 2 * n - i: i;
 
-    //         for (int j = 0; j < n - col; j++)
-    //         {
-    //             System.out.print("  ");
-    //         }
-    //         for (int k = col; k >= 1; k--)
-    //         {
-    //             System.out.print(k + " ");
-    //         }
-    //         for (int l = 2; l <= col; l++)
-    //         {
-    //             System.out.print(l + " ");
-    //         }
-    //         System.out.println();
-    //     }
-    // }
+//             for (int j = 0; j < n - col; j++)
+//             {
+//                 System.out.print("  ");
+//             }
+//             for (int k = col; k >= 1; k--)
+//             {
+//                 System.out.print(k + " ");
+//             }
+//             for (int l = 2; l <= col; l++)
+//             {
+//                 System.out.print(l + " ");
+//             }
+//             System.out.println();
+//         }
+//     }
 
     ////////////////////////////////////////////////////////////////////////////////////
 
