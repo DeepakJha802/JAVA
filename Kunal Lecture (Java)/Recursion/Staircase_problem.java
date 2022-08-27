@@ -19,3 +19,4 @@ public class Staircase_problem {
         return no_of_Step(n - 1) + no_of_Step(n - 2) + no_of_Step(n - 3);
     }
 }
+// Only best for small integer.
