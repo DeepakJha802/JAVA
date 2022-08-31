@@ -1,10 +1,16 @@
 import java.util.Scanner;
 
-public class Tower_Hanoi {
-    public static void main(String[] args) {
+public class Tower_Hanoi
+{
+    public static void main(String[] args)
+    {
         Scanner sc = new Scanner(System.in);
         int disk = sc.nextInt();
+        char source = 'a';
+        char auxiliary = 'b';
+        char destination = 'c';
         tower_Hanoi(disk, source, auxiliary, destination);
+        // System.out.println(tower_Hanoi(disk , source , auxiliary, destination));
     }
     static void tower_Hanoi (int disk , char source , char auxiliary , char destination)
     {

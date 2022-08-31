@@ -66,9 +66,12 @@ public class Keypad_problem {
             return output;
         }
         String[] small_no_array = keypad(n / 10);
+
         String[] single_digit_output = single_digit(n % 10);
+
         String[] output = new String[single_digit_output.length * small_no_array.length];
         int k = 0;
+
         for (int i = 0 ; i < single_digit_output.length; i++)
         {
             for (int j = 0; j < small_no_array.length; j++)
@@ -80,4 +83,3 @@ public class Keypad_problem {
         return output;
     }
 }
-

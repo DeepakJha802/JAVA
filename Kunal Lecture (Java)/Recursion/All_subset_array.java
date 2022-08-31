@@ -13,7 +13,15 @@ public class All_subset_array {
             arr[i] = sc.nextInt();
             sum = sum + arr[i];
         }
-        subset_Sum(arr , (sum / 2));
+        int[][] ans = subset_Sum(arr , (sum / 2));
+        for (int i = 0; i < ans.length; ++i)
+        {
+            for (int j = 0; j < ans[i].length; ++j)
+            {
+                System.out.print(ans[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 
     static int[][] subset_Sum(int[] arr , int k)
@@ -60,3 +68,5 @@ public class All_subset_array {
         return output;
     }
 }
+
+// All subset if array which element sum is half of entire array.
