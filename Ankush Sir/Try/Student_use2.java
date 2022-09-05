@@ -1,11 +1,5 @@
 import java.util.Scanner;
-
-class Student
-{
-    String Name;
-    int rollNumber;
-}
-
+import OOPS.Student;
 public class Student_use2
 {
     public static void main(String[] args)

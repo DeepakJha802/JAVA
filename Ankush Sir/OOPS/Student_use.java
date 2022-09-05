@@ -6,18 +6,21 @@ public class Student_use
     {
         Scanner sc = new Scanner(System.in);
 
-        Student s1 = new Student();
-        Student s2 = new Student();
+        System.out.print("Enter the number of students: ");
+        int number_of_students = sc.nextInt();
 
-        // System.out.println(s1);
-        s1.Name = "Deepak";
-        s1.rollNumber = 057;
+        Student s = new Student(number_of_students);
 
-        System.out.println(s1.Name + " " + s1.rollNumber);
+        System.out.println("Enter the students' names and roll numbers :-");
+        for (int i = 0; i < number_of_students; ++i)
+        {
+            sc.nextLine();
+            String name = sc.nextLine();
+            long roll_number = sc.nextLong();
 
-        s2.Name = "Ankush";
-        s2.rollNumber = 151;
+            s.add_student_details(name, roll_number);
+        }
 
-        System.out.println(s2.Name + " " + s2.rollNumber);
+        s.print_all_student_details();
     }
 }
