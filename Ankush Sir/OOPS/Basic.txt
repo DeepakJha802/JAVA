@@ -7,3 +7,4 @@ Defalut access modifier :- Properties are accessable with in the packages.
 Public :- Properties are accessable from anywhere.
 
 Private :- Properties are accessable only with in the same Class.
+
