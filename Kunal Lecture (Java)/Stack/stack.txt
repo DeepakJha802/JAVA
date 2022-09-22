@@ -1,0 +1,24 @@
+Stack basically is Abstract Data Structure also known as ADT.  We can perform any Insertion and deletion opertaion in only on top of the Stack.
+
+Stack is working on Last in First out principle.
+
+When we have to insert the element we called as push.
+
+When we have to delete the element we called as pop.
+
+When we have to know the top element in Stack we called the top() Function.
+
+When we have to know the Stack is empty or not we can call the isEmpty() Function.
+
+When we have to know the size of Stack we can call the size() Function.
+
+We can not perform any Insertion , Deletion , Read , Write Or Access opertaion.
+
+In the recursion When we call the Function all the Function call Stored in the call Stack Memory.
+
+  ** How to Store the Data in Stack Internally ?
+
+-->  We have to two ways to store the Stack Data Internally
+
+    1. Array
+    2. Linked List
