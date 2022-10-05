@@ -1,5 +1,3 @@
-import javax.swing.plaf.synth.SynthButtonUI;
-
 // import java.io.*;
 // import java.util.*;
 
@@ -38,3 +36,33 @@ import javax.swing.plaf.synth.SynthButtonUI;
 //     }
 // }
 
+import java.util.Scanner;
+
+public class Solution
+{
+    static double area(double side)
+    {
+        return (side * side);
+    }
+
+    static double area(double length, double breadth)
+    {
+        return (length * breadth);
+    }
+
+    static double perimeter(double side)
+    {
+        return (4.0 * side);
+    }
+
+    static double perimeter(double length, double breadth)
+    {
+        return (2.0 * (length + breadth));
+    }
+
+     static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        // aage khud se krlo bsdk
+    }
+}
