@@ -1,68 +1,91 @@
-// import java.io.*;
-// import java.util.*;
+import javax.sound.midi.Synthesizer;
 
-// public class Solution {
+// class Solution
+// {
+//     static void area(int r)
+//     {
+//         System.out.println(r * r);
+//     }
 
+//     static void area(int x , int y)
+//     {
+//         System.out.println(x * y);
+//     }
 //     public static void main(String[] args) {
-//         Scanner sc = new Scanner(System.in);
-//         int n = sc.nextInt();
-//         int[] arr = new int[n];
-//         for (int i = 0; i < n; i++)
-//         {
-//             arr[i] = sc.nextInt();
-//         }
-//         int k = sc.nextInt();
-//         int[] ans = new int[k];
-//         int count = Integer.MIN_VALUE;
-//         for (int i = 0; i < k; i++)
-//         {
-//             int pos = -1;
-//             int max = Integer.MIN_VALUE;
-//             for (int j = 0; j < n; j++)
-//             {
-//                 if (max < arr[j] && max <= count)
-//                 {
-//                     max = arr[j];
-//                     pos = j;
-//                 }
-//             }
-//             arr[i] = pos;
-//             count = max;
-//         }
-//         for (int i = 0; i < k; i++)
-//         {
-//             System.out.print(arr[i] + " ");
-//         }
+//         int x = 10;
+//         int r = 9;
+//         int y = 20;
+
+//         area(r);
+//         area(x, y);
 //     }
 // }
 
-import java.util.Scanner;
 
-public class Solution
+// class A
+// {
+//     A()
+//     {
+//         int i = 0;
+//         System.out.println("This is first constructor which value of i is: " + i);
+//     }
+//     A(int x)
+//     {
+//         System.out.println("This is second Constructor which have value of x is: " + x);
+//     }
+//     A(int x , int y)
+//     {
+//         System.out.println("This is second constructor which have value of x and y is: " + x + " " + y);
+//     }
+// }
+// class Solution
+// {
+//     public static void main(String[] args) {
+//         A ob1 = new A();
+//         A ob2 = new A(5);
+//         A obj3 = new A(10 , 20);
+//     }
+// }
+
+
+class A           // Thsi is superclass
 {
-    static double area(double side)
+    int i , j;
+    void showij()
     {
-        return (side * side);
-    }
-
-    static double area(double length, double breadth)
-    {
-        return (length * breadth);
-    }
-
-    static double perimeter(double side)
-    {
-        return (4.0 * side);
-    }
-
-    static double perimeter(double length, double breadth)
-    {
-        return (2.0 * (length + breadth));
-    }
-
-     static void main(String args[])
-    {
-        Scanner sc = new Scanner(System.in);
-        // aage khud se krlo bsdk
+        System.out.println("The value of i & j." + i + " " + j);
     }
 }
+class B extends A             // This is subclass
+{
+    int k;
+    void showk()
+    {
+        System.out.println("The value of k." + k);
+    }
+    void sum()
+    {
+        System.out.println("The sum is i and j and k." + (i + j + k));
+    }
+}
+class Solution
+{
+    public static void main(String[] args) {
+        A onj = new A();
+        B obj1 = new B();
+
+        onj.i = 10;
+        onj.j = 20;
+
+        onj.showij();
+
+        obj1.k = 90;
+
+        obj1.showk();
+
+        obj1.sum();
+
+    }
+}
+
+
