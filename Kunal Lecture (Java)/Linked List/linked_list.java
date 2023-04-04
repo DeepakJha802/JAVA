@@ -35,10 +35,16 @@ public class linked_list
     {
         // System.out.println("Print " + head);
 
-        System.out.println(head.data);
-        System.out.println(head.next.data);
-        System.out.println(head.next.next.data);
-        System.out.println(head.next.next.next.data);
+        while (head != null)
+        {
+            System.out.println(head.data);
+            head = head.next;
+        }
+
+        // System.out.println(head.data);
+        // System.out.println(head.next.data);
+        // System.out.println(head.next.next.data);
+        // System.out.println(head.next.next.next.data);
     }
 
     public static void main(String[] args)
