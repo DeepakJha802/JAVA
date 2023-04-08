@@ -30,7 +30,6 @@ public class linked_list
 
         return n1;
     }
-
     public static void print(Node<Integer> head)
     {
         // System.out.println("Print " + head);

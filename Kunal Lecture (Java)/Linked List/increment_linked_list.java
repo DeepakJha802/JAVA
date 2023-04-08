@@ -22,7 +22,8 @@ public class increment_linked_list {
     {
         // System.out.println("Print " + head);
 
-        while (head != null) {
+        while (head != null)
+        {
             System.out.println(head.data);
             head = head.next;
         }
