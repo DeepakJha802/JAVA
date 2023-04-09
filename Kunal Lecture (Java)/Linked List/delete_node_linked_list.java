@@ -11,7 +11,9 @@ class Node
         next = null;        // Default value of any reference in an any object is null.
     }
 }
-public class take_input_from_user {
+
+public class delete_node_linked_list
+{
 
     public static Node takeInput()
     {
@@ -44,7 +46,39 @@ public class take_input_from_user {
         }
         return head;
     }
+
+    public static Node delete(Node head , int position)
+    {
+        if (head == null)
+        {
+            return head;
+        }
+        if (position == 0)
+        {
+            return head.next;
+        }
+
+        int count = 0;
+        Node current_node = head;
+
+        while(current_node != null && count < (position - 1))
+        {
+            current_node = current_node.next;
+            count++;
+        }
+
+        if (current_node == null || current_node.next == null)
+        {
+            return head;
+        }
+
+        current_node.next = current_node.next.next;
+
+        return head;
+    }
+
     public static void print(Node head)
+
     {
         while (head != null)
         {
@@ -52,9 +86,20 @@ public class take_input_from_user {
             head = head.next;
         }
     }
+
     public static void main(String[] args)
     {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the linked list : ");
         Node head = takeInput();
+
+        System.out.println("Enter the element and position where we have to delete : ");
+        int position = sc.nextInt();
+
+        head = delete(head , position);
+        System.out.println("After deleting in linked list : ");
+
         print(head);
     }
 }
