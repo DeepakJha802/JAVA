@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class B_S_Agnostic {
     public static void main(String[] args) {
 
@@ -32,30 +33,20 @@ public class B_S_Agnostic {
 
             int mid = start + (end - start) / 2;
 
-            if (arr[mid] == target)
-            {
+            if (arr[mid] == target) {
                 return mid;
             }
 
-            if (isAgs)
-            {
-               if (target < arr[mid])
-               {
-                end = mid - 1;
-               }
-               else
-               {
-                start = mid + 1;
-               }
-            }
-            else
-            {
-                if (target > arr[mid])
-                {
+            if (isAgs) {
+                if (target < arr[mid]) {
                     end = mid - 1;
+                } else {
+                    start = mid + 1;
                 }
-                else
-                {
+            } else {
+                if (target > arr[mid]) {
+                    end = mid - 1;
+                } else {
                     start = mid + 1;
                 }
             }
