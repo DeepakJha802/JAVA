@@ -1,0 +1,20 @@
+Linked List :- In the linked list all element are not stored in memory in contiguous.
+
+All the block in the linked list is known as Node.
+
+First Node of the linked list is known as Head.
+
+Last Node of the linked list is known as Tail.
+
+All the Node of the linked list is stored the reference of the next node.
+
+Last Node of the linked list does't stored any reference it is stored null.
+
+All the node of the linked list is stored Data & Reference.
+
+Random Access of any index in linked list is complex than array and array list.
+
+if we have to insert the element in any random position then it is easy in linked list with respect to arraya and array list.
+
+if we have to delete the element in any random position then it is easy in linked list with respect to arraya and array list.
+
