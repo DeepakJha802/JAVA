@@ -8,7 +8,7 @@ class Node
     Node(int data)
     {
         this.data = data;
-        next = null;
+        next = null;       // Default is always null.
     }
 }
 
