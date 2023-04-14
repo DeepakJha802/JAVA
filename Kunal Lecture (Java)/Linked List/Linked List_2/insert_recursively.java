@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 class Node
@@ -13,7 +12,7 @@ class Node
     }
 }
 
-public class Print_recursive
+public  class insert_recursively
 {
     public static Node takeInput()
     {
@@ -58,12 +57,43 @@ public class Print_recursive
         printRecursive(head.next);
     }
 
-    public static void main(String[] args) {
+    public static Node insertRecursive(Node head , int value , int position)
+    {
+        if (head == null && position > 0)
+        {
+            return head;
+        }
+
+        if (position == 0)
+        {
+            Node new_node =  new Node(value);
+            new_node.next = head;
+
+            return new_node;
+        }
+        else
+        {
+            Node small_head = insertRecursive(head.next , value , position - 1);
+
+            head.next = small_head;
+
+            return head;
+        }
+    }
+    public static void main(String[] args)
+    {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter the linked list : ");
         Node head = takeInput();
 
+        System.out.println("Enter the value and position where you have to insert the new node : ");
+        int value = sc.nextInt();
+        int position = sc.nextInt();
+
+        head = insertRecursive(head, value , position);
+
+        System.out.println("Linked List after inserting new node : ");
         printRecursive(head);
     }
 }
