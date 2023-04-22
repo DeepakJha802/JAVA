@@ -1,19 +1,18 @@
-import java.util.Scanner;
+import java.util.*;
 
 class Node
 {
     int data;
-    Node next;                  // To store the reference the next node.
+    Node next;
 
-    Node (int data)           // Constructor
+    Node (int data)
     {
         this.data = data;
-        next = null;        // Default value of any reference in an any object is null.
+        next = null;
     }
 }
 
-
-public class reverse_linked_list
+public class delete_recursively
 {
     public static Node takeInput()
     {
@@ -42,19 +41,25 @@ public class reverse_linked_list
             {
                 tail.next = currentNode;
                 tail = currentNode;    // tail = tail.next;
-            }
+            }           
         }
         return head;
     }
 
-    public static void reverseLinkedlist (Node head)
+    public static Node deleteRecursively(Node head , int data , int position)
+    {
+
+    }
+
+    public static void printRecursive(Node head)
     {
         if (head == null)
         {
             return;
         }
-        reverseLinkedlist(head.next);
         System.out.print(head.data + " ");
+
+        printRecursive(head.next);
     }
 
     public static void main(String[] args)
@@ -64,22 +69,13 @@ public class reverse_linked_list
         System.out.println("Enter the linked list : ");
         Node head = takeInput();
 
-        System.out.println("Linked List in reverse order : ");
-        reverseLinkedlist(head);
-    }
-}
-class Solution {
-    public ListNode reverseList(ListNode head) {
-        ListNode prev = null;
-        ListNode current = head;
+        System.out.println("Enter the value and position where you have to insert the new node : ");
+        int value = sc.nextInt();
+        int position = sc.nextInt();
 
+        head = deleteRecursive(head, value , position);
 
-        while(current != null) {
-            ListNode next = current.next;
-            current.next = prev;
-            prev = current;
-            current = next;
-        }
-       return prev;
+        System.out.println("Linked List after inserting new node : ");
+        printRecursive(head);
     }
 }

@@ -1,91 +1,66 @@
-import javax.sound.midi.Synthesizer;
+// import java.util.*;
 
-// class Solution
-// {
-//     static void area(int r)
-//     {
-//         System.out.println(r * r);
-//     }
-
-//     static void area(int x , int y)
-//     {
-//         System.out.println(x * y);
-//     }
+// public class Solution {
 //     public static void main(String[] args) {
-//         int x = 10;
-//         int r = 9;
-//         int y = 20;
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the number of elements in the sequence:");
+//         int n = sc.nextInt();
+//         int[] sequence = new int[n];
+//         System.out.println("Enter the elements of the sequence:");
+//         for (int i = 0; i < n; i++) {
+//             sequence[i] = sc.nextInt();
+//         }
+//         System.out.println("Enter the value of K:");
+//         int k = sc.nextInt();
+//         sc.close();
+//         sortSequence(sequence, k);
+//         System.out.println("Sorted sequence:");
+//         for (int i = 0; i < n; i++) {
+//             System.out.print(sequence[i] + " ");
+//         }
+//     }
 
-//         area(r);
-//         area(x, y);
+//     public static void sortSequence(int[] sequence, int k) {
+//         int n = sequence.length;
+//         int start = 0;
+//         while (start < n) {
+//             int end = Math.min(start + k - 1, n - 1);
+//             Arrays.sort(sequence, start, end + 1);
+//             start += k;
+//         }
 //     }
 // }
 
 
-// class A
-// {
-//     A()
-//     {
-//         int i = 0;
-//         System.out.println("This is first constructor which value of i is: " + i);
-//     }
-//     A(int x)
-//     {
-//         System.out.println("This is second Constructor which have value of x is: " + x);
-//     }
-//     A(int x , int y)
-//     {
-//         System.out.println("This is second constructor which have value of x and y is: " + x + " " + y);
-//     }
-// }
-// class Solution
-// {
-//     public static void main(String[] args) {
-//         A ob1 = new A();
-//         A ob2 = new A(5);
-//         A obj3 = new A(10 , 20);
-//     }
-// }
+import java.util.*;
 
-
-class A           // Thsi is superclass
-{
-    int i , j;
-    void showij()
-    {
-        System.out.println("The value of i & j." + i + " " + j);
-    }
-}
-class B extends A             // This is subclass
-{
-    int k;
-    void showk()
-    {
-        System.out.println("The value of k." + k);
-    }
-    void sum()
-    {
-        System.out.println("The sum is i and j and k." + (i + j + k));
-    }
-}
-class Solution
-{
+public class Solution {
     public static void main(String[] args) {
-        A onj = new A();
-        B obj1 = new B();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of elements in the sequence:");
+        int n = sc.nextInt();
+        int[] sequence = new int[n];
+        System.out.println("Enter the elements of the sequence:");
+        for (int i = 0; i < n; i++) {
+            sequence[i] = sc.nextInt();
+        }
+        System.out.println("Enter the value of K:");
+        int k = sc.nextInt();
+        sc.close();
+        sortSequence(sequence, k);
+        System.out.println("Sorted sequence:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(sequence[i] + " ");
+        }
+    }
 
-        onj.i = 10;
-        onj.j = 20;
-
-        onj.showij();
-
-        obj1.k = 90;
-
-        obj1.showk();
-
-        obj1.sum();
-
+    public static void sortSequence(int[] sequence, int k) {
+        int n = sequence.length;
+        int start = 0;
+        while (start < n) {
+            int end = Math.min(start + k - 1, n - 1);
+            Arrays.sort(sequence, start, end + 1);
+            start += k;
+        }
     }
 }
-
-
