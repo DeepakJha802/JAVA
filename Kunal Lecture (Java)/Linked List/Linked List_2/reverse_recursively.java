@@ -12,7 +12,8 @@ class Node
     }
 }
 
-public class delete_recursively
+
+public class reverse_recursively
 {
     public static Node takeInput()
     {
@@ -46,22 +47,25 @@ public class delete_recursively
         return head;
     }
 
-    public static Node deleteRecursive(Node head , int position)
+    public static Node reverseRecursive(Node head)
     {
-        if (head == null)
+        if (head == null || head.next == null)
         {
             return head;
         }
+        // Node new_head = reverseRecursive(head.next);
+        // head.next.next = head;
+        // head.next = null;
 
-        if (position == 0)
+        Node new_head = reverseRecursive(head.next);
+        Node tail = new_head;
+        while (tail.next != null)
         {
-            return head.next;
+            tail = tail.next;
         }
-
-        Node new_head = deleteRecursive(head.next , position - 1);
-        head.next = new_head;
-
-        return head;
+        tail.next = head;
+        head.next = null;
+        return new_head;
     }
 
     public static void printRecursive(Node head)
@@ -82,12 +86,9 @@ public class delete_recursively
         System.out.println("Enter the linked list : ");
         Node head = takeInput();
 
-        System.out.println("Enter the position where you want to delete the node : ");
-        int position = sc.nextInt();
+        head = reverseRecursive(head);
 
-        head = deleteRecursive(head, position);
-
-        System.out.println("Linked List after Deleting the node : ");
+        System.out.println("Linked List After Reverse : ");
         printRecursive(head);
     }
 }
