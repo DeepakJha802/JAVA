@@ -54,8 +54,8 @@ public class reverse_recursively
             return head;
         }
         // Node new_head = reverseRecursive(head.next);
-        // head.next.next = head;
-        // head.next = null;
+        // head.next.next = head;  // 5 -> 4
+        // head.next = null;       // 4 -> null
 
         Node new_head = reverseRecursive(head.next);
         Node tail = new_head;
