@@ -99,18 +99,18 @@ class Solution
     public static void allSubsequence(int i ,int n , int[] arr , ArrayList<Integer> list)
     {
         if (i == n) {
-            for (int it : list) {
-                System.out.print(it + " ");
+            if (list.size() >= 0)
+            {
+                System.out.println(list);
             }
-            if (list.size() == 0) {
-                System.out.print("{}");
-            }
-            System.out.println();
-            return;
         }
-        list.add(arr[i]);
-        allSubsequence(i + 1, n , arr, list);
-        allSubsequence(i - 1, n , arr, list);
-        list.remove(i);
+        else
+        {
+            list.add(arr[i]);
+            allSubsequence(i + 1, n , arr, list);
+            list.remove(list.size() - 1);
+            allSubsequence(i + 1, n , arr, list);
+        }
+        return;
     }
 }
