@@ -107,7 +107,7 @@ public class M_sort {
 
         merge_sort(arr, start, mid);
         merge_sort(arr, mid + 1, end);
-        Merge_two_sorted_array (arr , start , end);
+        Merge_two_sorted_array (arr , start , end);  
     }
 
     static void Merge_two_sorted_array (int[] arr , int start , int end)
